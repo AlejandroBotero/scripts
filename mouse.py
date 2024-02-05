@@ -30,13 +30,21 @@ def on_event(event):
     elif n == 'o':
         conf['px'] = 35
     elif n == 'e':
-        conf['px'] = 75
+        conf['px'] = 100
     elif n == 'u':
-        conf['px'] = 125
+        conf['px'] = 200
 
     #events
     elif n == 't':
         pg.click()
+    elif n == 'n':
+        pg.click(button='right')
+    elif n == 'b':
+        pg.scroll(conf['px'])
+    elif n == 'm':
+        pg.scroll(-conf['px'])
+   
+    pg.write('/b')
 
 keyboard.on_press(on_event)
-keyboard.wait('esc')
+keyboard.wait()
