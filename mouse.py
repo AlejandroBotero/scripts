@@ -44,7 +44,6 @@ def on_event(event):
     elif n == 'm':
         pg.scroll(-conf['px'])
    
-    pg.write('/b')
 
 keyboard.on_press(on_event)
-keyboard.wait()
+keyboard.wait('s')
