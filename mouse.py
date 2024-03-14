@@ -46,4 +46,4 @@ def on_event(event):
    
 
 keyboard.on_press(on_event)
-keyboard.wait('s')
+keyboard.wait('ñ')
