@@ -1,0 +1,64 @@
+default partial alphanumeric_keys modifier_keys
+xkb_symbols "custom" {
+
+    name[Group1] = "Custom Dvorak-style layout";
+
+    // Caps Lock as Backspace
+    key <CAPS> { [ BackSpace, Delete ] };
+
+    // Less/Greater key as Escape
+    key <LSGT> { [ Escape ] };
+
+    // Mode_switch (AltGr)
+    key <RALT> { [ Mode_switch ] };
+
+    // Top row
+    key <AD01> { [ apostrophe, question, slash ] };
+    key <AD02> { [ comma, semicolon, 1 ] };
+    key <AD03> { [ period, colon, 2 ] };
+    key <AD04> { [ p, P, 3 ] };
+    key <AD05> { [ y, Y, plus ] };
+    key <AD06> { [ f, F, at ] };
+    key <AD07> { [ g, G, braceleft ] };
+    key <AD08> { [ c, C, braceright ] };
+    key <AD09> { [ r, R, parenleft ] };
+    key <AD10> { [ l, L, parenright ] };
+    key <AD11> { [ dead_grave, dead_circumflex ] };
+    key <AC11> { [ dead_acute, dead_diaeresis, dead_tilde ] };
+
+    // Home row
+    key <AC01> { [ a, A, equal, percent ] };
+    key <AC02> { [ o, O, 4, ampersand ] };
+    key <AC03> { [ e, E, 5, backslash ] };
+    key <AC04> { [ u, U, 6, bar ] };
+    key <AC05> { [ i, I, minus, underscore ] };
+    key <AC06> { [ d, D, numbersign ] };
+    key <AC07> { [ h, H, bracketleft ] };
+    key <AC08> { [ t, T, bracketright ] };
+    key <AC09> { [ n, N, less ] };
+    key <AC10> { [ s, S, greater ] };
+
+    // Bottom row
+    key <AB01> { [ ntilde, Ntilde, 7, EuroSign ] };
+    key <AB02> { [ q, Q, 8 ] };
+    key <AB03> { [ j, J, 9 ] };
+    key <AB04> { [ k, K, 0 ] };
+    key <AB05> { [ x, X, asterisk ] };
+    key <AB06> { [ b, B, quotedbl ] };
+    key <AB07> { [ m, M ] };
+    key <AB08> { [ w, W ] };
+    key <AB09> { [ v, V ] };
+    key <AB10> { [ z, Z ] };
+
+    key <SPCE> { [ space ] };
+    key <BKSL> { [ Return ] };
+
+    // Modifiers
+    key <RCTL> { [ Control_R ] };
+    key <RWIN> { [ Super_R ] };
+    key <MENU> { [ Menu ] };
+
+    // Enable AltGr / Level3
+    include "level3(ralt_switch)"
+};
+
